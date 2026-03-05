@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Test - BugBarrier Experts</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .test-section {
+      padding: 2rem;
+      margin: 2rem 0;
+      border: 2px dashed #ccc;
+    }
+    .test-label {
+      background: #333;
+      color: white;
+      padding: 0.5rem 1rem;
+      display: inline-block;
+      margin-bottom: 1rem;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+    .color-box {
+      width: 100px;
+      height: 100px;
+      display: inline-block;
+      margin: 0.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    .spacing-box {
+      background: #e0e0e0;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Test Header -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">BB</div>
+        <span>BugBarrier Experts</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+      </nav>
+      <div class="nav-desktop">
+        <a href="tel:3234460886" class="btn-call">Call Now</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <div class="container" style="margin-top: 2rem;">
+      <h1 style="text-align: center; color: var(--color-primary); margin-bottom: 2rem;">🎨 CSS Style Test</h1>
+
+      <!-- Test 1: Colors -->
+      <div class="test-section">
+        <div class="test-label">Test 1: Color Variables</div>
+        <div>
+          <div class="color-box" style="background: var(--color-primary);" title="Primary Green"></div>
+          <div class="color-box" style="background: var(--color-accent);" title="Accent Orange"></div>
+          <div class="color-box" style="background: var(--color-gray-600);" title="Gray"></div>
+          <div class="color-box" style="background: var(--color-white); border: 1px solid #ccc;" title="White"></div>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> You see green, orange, gray, and white boxes</p>
+      </div>
+
+      <!-- Test 2: Typography -->
+      <div class="test-section">
+        <div class="test-label">Test 2: Typography</div>
+        <h1>Heading 1 - Should be large and green</h1>
+        <h2>Heading 2 - Should be medium and green</h2>
+        <h3>Heading 3 - Should be smaller and green</h3>
+        <p>This is a paragraph. Should be readable with good line-height and gray color.</p>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Headings are green, text is gray, and spacing looks good</p>
+      </div>
+
+      <!-- Test 3: Buttons -->
+      <div class="test-section">
+        <div class="test-label">Test 3: Buttons</div>
+        <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+          <button class="btn-primary">Primary Button (Orange)</button>
+          <button class="btn-secondary">Secondary Button (Outline)</button>
+          <button class="btn-call">Call Button (Orange)</button>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Buttons are orange/styled and hoverable</p>
+      </div>
+
+      <!-- Test 4: Hero Section -->
+      <div class="test-section">
+        <div class="test-label">Test 4: Hero Section</div>
+        <section class="hero" style="margin: 0; border-radius: 8px;">
+          <div class="hero-content">
+            <h1>Hero Heading</h1>
+            <p>This is hero text on green background</p>
+            <div class="hero-buttons">
+              <button class="btn-primary">Call Now</button>
+              <button class="btn-secondary">Get Free Inspection</button>
+            </div>
+          </div>
+        </section>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Green background, white text, centered, buttons visible</p>
+      </div>
+
+      <!-- Test 5: Service Cards -->
+      <div class="test-section">
+        <div class="test-label">Test 5: Service Cards</div>
+        <div class="grid grid-cols-1 gap-8">
+          <div class="service-card">
+            <img src="https://images.unsplash.com/photo-1742900280861-32bed068938b?w=400" alt="Test" class="service-card-image" style="width: 100%; height: 200px; object-fit: cover; border-radius: 8px; margin-bottom: 1rem;">
+            <h3>Service Card Title</h3>
+            <p>This is a service card with image, title, and description. Should have shadow and hover effect.</p>
+          </div>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Card has white background, shadow, rounded corners</p>
+      </div>
+
+      <!-- Test 6: Grid System -->
+      <div class="test-section">
+        <div class="test-label">Test 6: Grid System</div>
+        <div class="grid grid-cols-1 gap-4">
+          <div class="spacing-box">Grid Item 1</div>
+          <div class="spacing-box">Grid Item 2</div>
+          <div class="spacing-box">Grid Item 3</div>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Items stack vertically with gaps</p>
+      </div>
+
+      <!-- Test 7: Contact Form -->
+      <div class="test-section">
+        <div class="test-label">Test 7: Contact Form</div>
+        <div class="contact-form-wrapper">
+          <form id="test-form">
+            <div class="form-group">
+              <label for="test-name" class="form-label">Name</label>
+              <input type="text" id="test-name" class="form-input" placeholder="Enter your name">
+            </div>
+            <div class="form-group">
+              <label for="test-message" class="form-label">Message</label>
+              <textarea id="test-message" class="form-textarea" rows="3" placeholder="Enter your message"></textarea>
+            </div>
+            <button type="button" class="btn-submit">Submit Button</button>
+          </form>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Form has white background, styled inputs, orange submit button</p>
+      </div>
+
+      <!-- Test 8: FAQ Accordion -->
+      <div class="test-section">
+        <div class="test-label">Test 8: FAQ Accordion</div>
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Test Question - Click to expand</span>
+            <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <polyline points="6 9 12 15 18 9"></polyline>
+            </svg>
+          </button>
+          <div class="faq-answer">
+            <div class="faq-answer-content">
+              This is the answer content. It should be hidden initially and expand when question is clicked.
+            </div>
+          </div>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Question has border, clickable, answer is hidden</p>
+      </div>
+
+      <!-- Test 9: Feature Cards -->
+      <div class="test-section">
+        <div class="test-label">Test 9: Feature Cards</div>
+        <div class="grid grid-cols-1 gap-8">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--color-accent)" stroke-width="2">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+              </svg>
+            </div>
+            <h3>Feature Title</h3>
+            <p>Feature description text goes here. Should be centered with icon above.</p>
+          </div>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Icon centered, orange circle background, card has shadow</p>
+      </div>
+
+      <!-- Test 10: CTA Box -->
+      <div class="test-section">
+        <div class="test-label">Test 10: CTA Box</div>
+        <div class="cta-box">
+          <h2>Call to Action Heading</h2>
+          <p>This is a CTA box with green background and white text</p>
+          <div class="cta-buttons">
+            <button class="btn-primary">Primary Action</button>
+            <button class="btn-secondary">Secondary Action</button>
+          </div>
+        </div>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Green gradient background, white text, centered, rounded corners</p>
+      </div>
+
+      <!-- Test 11: Responsive (Check manually) -->
+      <div class="test-section">
+        <div class="test-label">Test 11: Responsive Design</div>
+        <p><strong>Resize your browser window to test:</strong></p>
+        <ul style="list-style: inside; margin-left: 1rem;">
+          <li><strong>Mobile (< 768px):</strong> Hamburger menu visible, single column layout</li>
+          <li><strong>Tablet (768px - 1023px):</strong> Desktop menu visible, 2-column grid</li>
+          <li><strong>Desktop (≥ 1024px):</strong> Full navigation, multi-column grid</li>
+        </ul>
+        <p style="margin-top: 1rem;">✅ <strong>Pass if:</strong> Layout adjusts based on screen width</p>
+      </div>
+
+      <!-- Final Result -->
+      <div class="test-section" style="background: linear-gradient(135deg, #1e5128, #163d1f); color: white; text-align: center;">
+        <h2 style="color: white;">📊 CSS Test Results</h2>
+        <p style="font-size: 1.25rem; margin: 1rem 0;">If all tests above show proper styling, your CSS is working perfectly!</p>
+        <div style="margin-top: 2rem;">
+          <a href="index.html" class="btn-primary">Go to Home Page</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer Test -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-grid">
+        <div>
+          <div class="footer-logo">
+            <div class="footer-logo-icon">BB</div>
+            <span style="font-weight: var(--font-weight-bold); font-size: 1.125rem;">BugBarrier Experts</span>
+          </div>
+          <p class="footer-text">Footer should have green background and white text</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 BugBarrier Experts. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

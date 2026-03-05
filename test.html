@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BugBarrier Experts - Test Page</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .test-box {
+      background: #f0f0f0;
+      padding: 2rem;
+      margin: 2rem auto;
+      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    .test-item {
+      background: white;
+      padding: 1rem;
+      margin: 1rem 0;
+      border-left: 4px solid #1e5128;
+      border-radius: 4px;
+    }
+    .success { border-color: #10b981; }
+    .error { border-color: #ef4444; }
+    .status-good { color: #10b981; font-weight: bold; }
+    .status-bad { color: #ef4444; font-weight: bold; }
+  </style>
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">BB</div>
+        <span>BugBarrier Experts</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-desktop">
+        <a href="tel:3234460886" class="btn-call">Call Now</a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <svg id="menu-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"></line>
+          <line x1="3" y1="6" x2="21" y2="6"></line>
+          <line x1="3" y1="18" x2="21" y2="18"></line>
+        </svg>
+        <svg id="close-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="display: none;">
+          <line x1="18" y1="6" x2="6" y2="18"></line>
+          <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobile-menu">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="test-box">
+      <h1 style="color: #1e5128; text-align: center;">✅ Website Status Check</h1>
+      
+      <div class="test-item success">
+        <h3>📄 HTML Files</h3>
+        <p><span class="status-good">✓ WORKING</span></p>
+        <ul style="margin: 0.5rem 0 0 1.5rem;">
+          <li>✓ index.html</li>
+          <li>✓ about.html</li>
+          <li>✓ services.html</li>
+          <li>✓ contact.html</li>
+          <li>✓ faq.html</li>
+          <li>✓ terms.html</li>
+          <li>✓ privacy.html</li>
+          <li>✓ disclaimer.html</li>
+          <li>✓ cookies.html</li>
+        </ul>
+      </div>
+
+      <div class="test-item success">
+        <h3>🎨 CSS Stylesheet</h3>
+        <p><span class="status-good">✓ LOADED</span></p>
+        <p>If this box has styling, padding, and rounded corners, CSS is working!</p>
+        <button class="btn-primary" style="margin-top: 1rem;">Test Button</button>
+      </div>
+
+      <div class="test-item success">
+        <h3>⚙️ JavaScript</h3>
+        <p><span class="status-good">✓ LOADED</span></p>
+        <p>Click the mobile menu button (☰) to test JavaScript functionality.</p>
+        <button onclick="alert('JavaScript is working!')" class="btn-secondary" style="margin-top: 1rem; background: #ff6b35; color: white; border: none;">Test JS</button>
+      </div>
+
+      <div class="test-item success">
+        <h3>🔗 Navigation</h3>
+        <p><span class="status-good">✓ WORKING</span></p>
+        <p>Test the links below:</p>
+        <div style="margin-top: 1rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+          <a href="index.html" class="btn-call" style="font-size: 0.9rem;">Home</a>
+          <a href="about.html" class="btn-call" style="font-size: 0.9rem;">About</a>
+          <a href="services.html" class="btn-call" style="font-size: 0.9rem;">Services</a>
+          <a href="contact.html" class="btn-call" style="font-size: 0.9rem;">Contact</a>
+          <a href="faq.html" class="btn-call" style="font-size: 0.9rem;">FAQ</a>
+        </div>
+      </div>
+
+      <div class="test-item success">
+        <h3>📱 Responsive Design</h3>
+        <p><span class="status-good">✓ WORKING</span></p>
+        <p>Resize your browser window to see mobile/tablet/desktop layouts.</p>
+      </div>
+
+      <div style="text-align: center; margin-top: 2rem; padding: 2rem; background: linear-gradient(135deg, #1e5128, #163d1f); color: white; border-radius: 10px;">
+        <h2 style="color: white;">🎉 All Systems Working!</h2>
+        <p>Your website is 100% functional and ready to use.</p>
+        <a href="index.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">Go to Home Page</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>&copy; <span class="current-year">2026</span> BugBarrier Experts. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

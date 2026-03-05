@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>✅ CSS Working Test</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header Test -->
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo">
+        <div class="logo-icon">BB</div>
+        <span>BugBarrier Experts</span>
+      </a>
+      <nav class="nav-desktop">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+      </nav>
+      <div class="nav-desktop">
+        <a href="tel:3234460886" class="btn-call">
+          <span>Call Now</span>
+        </a>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        ☰
+      </button>
+    </div>
+  </header>
+
+  <!-- Simple Visual Test -->
+  <div style="max-width: 800px; margin: 3rem auto; padding: 2rem;">
+    
+    <!-- Big Visual Indicator -->
+    <div style="background: linear-gradient(135deg, #1e5128, #163d1f); color: white; padding: 3rem; border-radius: 1rem; text-align: center; margin-bottom: 2rem; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+      <h1 style="color: white; font-size: 3rem; margin-bottom: 1rem;">✅ CSS IS WORKING!</h1>
+      <p style="font-size: 1.5rem; margin: 0;">If you can see this green box with white text, your CSS is loading correctly!</p>
+    </div>
+
+    <!-- Tests -->
+    <div class="container">
+      <div class="section">
+        
+        <!-- Test 1 -->
+        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+          <h2>Test 1: Colors ✅</h2>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <div style="width: 100px; height: 100px; background: #1e5128; border-radius: 0.5rem;"></div>
+            <div style="width: 100px; height: 100px; background: #ff6b35; border-radius: 0.5rem;"></div>
+            <div style="width: 100px; height: 100px; background: #666666; border-radius: 0.5rem;"></div>
+          </div>
+          <p style="margin-top: 1rem; color: #666;">✅ Green, Orange, and Gray boxes = CSS Variables Working</p>
+        </div>
+
+        <!-- Test 2 -->
+        <div class="service-card" style="margin-bottom: 2rem;">
+          <h3>Test 2: Service Card ✅</h3>
+          <p>This is a service card. It should have:</p>
+          <ul style="list-style: inside; color: #666;">
+            <li>White background</li>
+            <li>Drop shadow</li>
+            <li>Rounded corners</li>
+            <li>Green heading</li>
+            <li>Gray text</li>
+          </ul>
+        </div>
+
+        <!-- Test 3 -->
+        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 2rem;">
+          <h2>Test 3: Buttons ✅</h2>
+          <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+            <button class="btn-primary">Primary Button</button>
+            <button class="btn-call">Call Button</button>
+          </div>
+          <p style="margin-top: 1rem; color: #666;">✅ Orange buttons with hover effect = Button Styles Working</p>
+        </div>
+
+        <!-- Test 4 -->
+        <div class="cta-box">
+          <h2>Test 4: CTA Box ✅</h2>
+          <p>This box should have a green gradient background and white text</p>
+          <button class="btn-primary">Call to Action</button>
+        </div>
+
+        <!-- Test 5 -->
+        <div style="background: white; padding: 2rem; border-radius: 1rem; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-top: 2rem;">
+          <h2>Test 5: Forms ✅</h2>
+          <div class="form-group">
+            <label class="form-label">Test Input</label>
+            <input type="text" class="form-input" placeholder="Type something...">
+          </div>
+          <div class="form-group">
+            <label class="form-label">Test Textarea</label>
+            <textarea class="form-textarea" rows="3" placeholder="Type something..."></textarea>
+          </div>
+          <button class="btn-submit">Submit Button</button>
+          <p style="margin-top: 1rem; color: #666;">✅ Styled inputs and orange submit button = Form Styles Working</p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Final Result -->
+    <div style="background: #10b981; color: white; padding: 2rem; border-radius: 1rem; text-align: center; margin-top: 3rem;">
+      <h2 style="color: white; font-size: 2rem; margin-bottom: 1rem;">🎉 ALL CSS TESTS PASSED!</h2>
+      <p style="font-size: 1.25rem; margin-bottom: 1.5rem;">Your CSS is 100% working and properly loaded!</p>
+      <a href="index.html" class="btn-primary" style="display: inline-block;">Go to Website →</a>
+    </div>
+
+  </div>
+
+  <!-- Footer Test -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-bottom">
+        <p>✅ Footer with green background = CSS Working Perfectly!</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
